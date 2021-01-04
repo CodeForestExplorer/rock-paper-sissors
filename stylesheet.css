@@ -4,44 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(140, 140, 245, 0.849);
+  background-color: rgb(140, 140, 245);
   font-family: "Hanalei Fill", cursive;
 }
 .container {
   height: 10vh;
-}
-.selectionBox {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.questionBox {
-  font-size: 6.8vw;
-  margin: 1rem;
-  padding: 1.5rem;
-  align-self: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.imgBox {
-  display: inline-block;
-  align-self: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
-  padding: 20px;
-}
-.imgBox img {
-  height: 20vh;
-  border: 2px dotted rgb(13, 241, 70);
-  border-radius: 50px;
-}
-.displayBox {
-  border: 2px solid red;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
