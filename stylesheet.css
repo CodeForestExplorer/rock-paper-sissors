@@ -9,4 +9,43 @@
 }
 .container {
   height: 10vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.selector {
+  padding: 1rem 2.5rem;
+  margin: 1rem 0.5rem;
+}
+.selector button {
+  font-size: 2rem;
+  margin: 1rem 0.5rem;
+  outline: none;
+}
+
+#rock {
+background-color: rgba(128, 128, 128, 0.76);
+  padding: 1rem 2.5rem;
+}
+#paper {
+  background-color: rgba(248, 248, 248, 0.747);
+  padding: 1rem 2.5rem;
+}
+#scissors {
+  background-image: linear-gradient(to right, rgb(192, 192, 192), rgb(65, 45, 238));
+  padding: 1rem 2.5rem;
 }
