@@ -14,8 +14,8 @@ scissorsSelector.addEventListener("click", runLog);
 // Declaring global Functions
 
 function runLog() {
-  for (let i = 0; i < computerChoiceArray.length; i++) {
-    console.log(computerChoiceArray[[Math.floor(Math.random() * 3)]]);
-    break;
+  for (let i = 0; i < 1; i++) {
+    console.log(computerChoiceArray[Math.floor(Math.random() * 3)]);
+    // break;
   }
 }
