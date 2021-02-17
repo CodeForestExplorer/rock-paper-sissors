@@ -1,51 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+/* Default Styling Reset  */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,900;1,400&display=swap");
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  background-color: rgb(140, 140, 245);
-  font-family: "Hanalei Fill", cursive;
 }
-.container {
-  height: 10vh;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto 20px;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: teal;
 }
 
-.main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem auto;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
-.selector {
-  padding: 1rem 2.5rem;
-  margin: 1rem 0.5rem;
-}
-.selector button {
+header {
+  background-color: white;
   font-size: 2rem;
-  margin: 1rem 0.5rem;
-  outline: none;
+  text-align: center;
+  height: 90px;
+}
+/* Player And computer Score-board */
+.score-board {
+  background-color: rgb(76, 76, 138);
+  height: 100px;
+  width: 200px;
+  display: flex;
+  margin: 0.5rem auto;
+  border: 0.3rem solid black;
+  border-radius: 5px;
+  position: relative;
+  justify-content: center;
+  align-self: center;
 }
 
-#rock {
-background-color: rgba(128, 128, 128, 0.76);
-  padding: 1rem 2.5rem;
+.badge {
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 0.1rem;
 }
-#paper {
-  background-color: rgba(248, 248, 248, 0.747);
-  padding: 1rem 2.5rem;
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -35px;
 }
-#scissors {
-  background-image: linear-gradient(to right, rgb(192, 192, 192), rgb(65, 45, 238));
-  padding: 1rem 2.5rem;
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -55px;
+}
+
+.score-counter {
+  position: absolute;
+  top: 25px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+/* Result Choice */
+.result {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  height: 90px;
+}
+/* Rock Paper Scissors Selection Section */
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice {
+  background-color: #4c4c8a;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin: 1rem;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.choice:hover {
+  transition: all 0.3s ease;
+  background-color: red;
+}
+.choice img {
+  height: 150px;
+  width: 150px;
+}
+
+#action-message {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

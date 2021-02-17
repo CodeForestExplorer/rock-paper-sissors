@@ -13,17 +13,40 @@
     <title>Rock Paper Scissors Game</title>
   </head>
   <body>
-    <div class="container">
-      <div class="main">
-        <h1>Select your choice</h1>
-        <div class="selector">
-          <button><i id="rock" class="fas fa-hand-rock"></i></button>
-          <button><i id="paper" class="fas fa-hand-paper"></i></button>
-          <button><i id="scissors" class="fas fa-hand-scissors"></i></button>
-        </div>
+    <!-- Rock Paper Scissors Game Header -->
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- Score Board Display -->
+    <div class="score-board">
+      <div id="user-label" class="badge">Player </div>
+      <div id="computer-label" class="badge">Computer</div>
+      <div class="score-counter">
+        <span class="user-score">0</span>:<span class="computer-score">0</span>
       </div>
-      <div class="result"></div>
     </div>
+    
+    <!-- Result Display -->
+    <div class="result">
+      <p class="result-statement">Paper Cover Rock. You Win</p>
+    </div>
+
+    <!-- Rock Paper Scissors Display -->
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="Images/Rock.png" alt="Rock-selector" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="Images/Paper.png" alt="Paper-selector" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="Images/Scissors.png" alt="Scissors-selector" />
+      </div>
+    </div>
+    <p id=action-message>Make Your Move</pid>
+
+    <!-- Scripts file link -->
     <script src="app.js"></script>
   </body>
 </html>

@@ -9,3 +9,4 @@ Workflow for project Logic/Script
 3. Calculating Score post [User, computer] selection using if/else statement.
 
 4. Adding/Embedding images for "Rock-Paper-Scissors" from local or Cloud storage.
+ 
