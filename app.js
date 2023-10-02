@@ -63,7 +63,7 @@ function game(userChoice) {
     case "paperpaper":
     case "scissorsscissors":
       console.log(`Its a Tie`);
-      winnerLog_p.innerHTML = `${userUpperCase} Null ${ComputerUpperCase}. Chance is TIED`;
+      winnerLog_p.innerHTML = `${userUpperCase} doesn't beats ${ComputerUpperCase}. It's a TIE`;
       break;
   }
 
